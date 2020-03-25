@@ -3,7 +3,7 @@
 CMA, acronym of Completeness Metric Analyzer, is a command-line tool for runtime monitoring of
 timing and State Machine status. This tracing mechanisms uses software level acquisition of hardware timing and State Machine information, outputs operations are the tracing data of the processor such as the function timing execution combined with formal description of the system behaviour through the State Machine status and input operations. The trace protocol provides a real-time trace capability for the functionality.
 
-The CMA tool actually is built for a specific MegaM@rt2 Short Range Communication case study.
+The CMA tool actually is built for a specific MegaM@rt2 Short Range Communication case study, in collaboration with Tekne, Intecs and UnivAq.
 ## How it works
 When an event requires the acquisition of system-related information, the CMA tool operates a combination of three macro operations, both composed by a sequence of operations, as follow:
 * data acquisition: in this operation the tool gets information about the system run, such as execution time, state machine status, etc
@@ -45,11 +45,10 @@ To correctly use the library follow this steps:
   function in cma.c file.
 3. After the struct **trace** has been populated properly, call the **printTrace()** function. 
 4. Compile and run your code into the board. 
-5. Run the cma.py to capture and write the traces into the log file.
+5. Run the **cmaLogger.py** to capture and write the traces into the log file.
    To do that open the terminal, navigate to the folder where you download the file and launch this command:
-   python cma.py.
+   python **cmaLogger.py**.
    
-   **! The default **serial** port in the script is "COM4". Please make sure that is the same port on which your board is
-   writing otherwise open cma.py with an editor and modify the port variable into the file !**
+   **! The default serial port in the script is "COM4". Please make sure that is the same port on which your board is writing otherwise open cmaLogger.py with an editor and modify the port variable into the file !**
 
-6. done! your log file is produced into the same folder of cma.py file.
+6. Done! The log file is produced into the same folder of **cmaLogger.py** file.
