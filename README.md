@@ -28,7 +28,9 @@ The hardware target used is a Decawave EVB1000 board with STLINK-V2 debugger. Ec
 
 The second module is a logger that reads the serial port and generates a log file. For this module, have to run into a python3 environment and the pyserial module is required.
 ## Installation Instructions
-In order to install the CMA tool, for the C module import the C files into the project containing the board sources and include the header file where needed.
+In order to install the CMA tool, for the C module:
+1. import the C files into the project containing the board sources
+2. include the header file where needed.
 
 Instead regarding the Python module:
    1. Download and Install python3 from the official page https://www.python.org/.
