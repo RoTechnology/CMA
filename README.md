@@ -50,6 +50,6 @@ To correctly use the library follow this steps:
    python cma.py.
    
    **! The default **serial** port in the script is "COM4". Please make sure that is the same port on which your board is
-   writing otherwise open cma.py with an editor and modify the port variable in . !**
+   writing otherwise open cma.py with an editor and modify the port variable into the file !**
 
 6. done! your log file is produced into the same folder of cma.py file.
