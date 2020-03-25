@@ -12,6 +12,8 @@ When an event requires the acquisition of system-related information, the CMA to
 
 The log file contains a traces which have the following structure:
 
+\<timestamp\> \<eventId\> \<instance_name\>\_\<port_name_providing_the_operation\>\_\<operation_name\>
+  
 - timestamp = system time in μs
 - eventId = 0 (running), 1 (ready), 2 (blocked), 3 (sleep), 4 (wakeup)
 - instance_name = according to the device
