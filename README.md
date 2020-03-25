@@ -30,7 +30,10 @@ The second module is a logger that reads the serial port and generates a log fil
 ## Installation Instructions
 In order to install the CMA tool, for the C module import the C files into the project containing the board sources and include the header file where needed.
 
-Instead regarding the Python module, install python and pyserial to enable the logger to operate.
+Instead regarding the Python module:
+   1. Download and Install python3 from the official page https://www.python.org/.
+   2. install pyserial using pip command into the: **pip install pyserial** .
+   
 ## Usage description
 To correctly use the library follow this steps:
 
