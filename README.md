@@ -32,7 +32,7 @@ In order to install the CMA tool, for the C module import the C files into the p
 
 Instead regarding the Python module:
    1. Download and Install python3 from the official page https://www.python.org/.
-   2. install pyserial using pip command into the: **pip install pyserial** .
+   2. Install pyserial using pip command into the: **pip install pyserial** .
    
 ## Usage description
 To correctly use the library follow this steps:
