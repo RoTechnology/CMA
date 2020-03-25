@@ -21,9 +21,10 @@ with serial.Serial(
 		try:
 			while(True):
 					x = ser.readline()
-					print(x)
+
 
 					if( x[0:2].decode("utf-8") == '7E'):
+						print(x)
 						s=x[3:len(x)-4].decode("utf-8");
 						stat = x.decode("utf-8")[-3];
 						s2 = status[stat];
