@@ -42,6 +42,9 @@ To correctly use the library follow this steps:
 4. Compile and run your code into the board. 
 5. Run the cma.py to capture and write the traces into the log file.
    To do that open the terminal, navigate to the folder where you download the file and launch this command:
-   python cma.py
-   **!** The default **serial** port in the script is "COM4". Please make sure that is the same port on which your board is        writing otherwise open cma.py with an editor and modify the port variable in . **!**
-6 done! your log file is produced into the same folder of cma.py file.
+   python cma.py.
+   
+   **! The default **serial** port in the script is "COM4". Please make sure that is the same port on which your board is
+   writing otherwise open cma.py with an editor and modify the port variable in . !**
+
+6. done! your log file is produced into the same folder of cma.py file.
