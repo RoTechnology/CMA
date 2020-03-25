@@ -32,5 +32,16 @@ In order to install the CMA tool, for the C module import the C files into the p
 
 Instead regarding the Python module, install python and pyserial to enable the logger to operate.
 ## Usage description
-In the source code, after the struct **trace** has been populated properly, call the **printTrace()** function. 
-When execute the program, run the Python script from terminal to capture and write the traces into the log file. Make sure that the **serial** port in python script has been configured correctly.
+To correctly use the library follow this steps:
+
+1. Include cma.h file into the class you want to log.
+2. Populate the **tracestruct**. Pay attention the tracestruct is composed by the filed described above.
+  You can add or remove fields in order to log different parameters but then you have to modify the **printTrace()**
+  function in cma.c file.
+3. After the struct **trace** has been populated properly, call the **printTrace()** function. 
+4. Compile and run your code into the board. 
+5. Run the cma.py to capture and write the traces into the log file.
+   To do that open the terminal, navigate to the folder where you download the file and launch this command:
+   python cma.py
+   **!** The default **serial** port in the script is "COM4". Please make sure that is the same port on which your board is        writing otherwise open cma.py with an editor and modify the port variable in . **!**
+6 done! your log file is produced into the same folder of cma.py file.
